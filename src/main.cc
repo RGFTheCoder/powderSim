@@ -64,7 +64,6 @@ protected:
 
 	void Unload() override
 	{
-		exit(34);
 		UnloadRenderTexture(target);
 	}
 } sk;
