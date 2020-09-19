@@ -6,7 +6,7 @@
 
 #include "Cell/Cells/Cells.hh"
 
-static class Automata : public Sketch
+class Automata : public Sketch
 {
 protected:
 	CellWorld data;
@@ -66,9 +66,10 @@ protected:
 	{
 		UnloadRenderTexture(target);
 	}
-} sk;
+};
+static Automata *sk = new Automata;
 
 int main()
 {
-	return sk;
+	return *sk;
 }

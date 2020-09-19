@@ -33,9 +33,5 @@ auto Sketch::MainLoop() -> void
 		EndDrawing();
 	}
 	this->Unload();
-}
-
-Sketch::~Sketch()
-{
 	CloseWindow(); // Close window and OpenGL context
 }

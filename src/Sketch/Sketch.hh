@@ -24,7 +24,6 @@ public:
 	Sketch(const Sketch &) = default;
 	Sketch &operator=(Sketch &&) = default;
 	Sketch &operator=(const Sketch &) = default;
-	~Sketch();
 
 	operator int();
 
