@@ -16,6 +16,7 @@ protected:
 	virtual void Draw(){};
 	virtual void Setup() { std::cout << "h\n"; };
 	virtual void Update(){};
+	virtual void Unload(){};
 
 public:
 	Sketch();

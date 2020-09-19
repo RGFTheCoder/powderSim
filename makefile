@@ -12,7 +12,8 @@ vpath %.cc src
 compileAndRun:
 		@make -s clean
 		@make -s $(PROGRAM_NAME)
-		@catchsegv ./bin/$(PROGRAM_NAME)
+		# @catchsegv ./bin/$(PROGRAM_NAME)
+		@./bin/$(PROGRAM_NAME)
 
 $(PROGRAM_NAME): $(OFILES)
 		mkdir -p ./bin/

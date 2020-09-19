@@ -32,6 +32,7 @@ auto Sketch::MainLoop() -> void
 
 		EndDrawing();
 	}
+	this->Unload();
 }
 
 Sketch::~Sketch()

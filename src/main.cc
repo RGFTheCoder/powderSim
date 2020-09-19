@@ -61,6 +61,12 @@ protected:
 		EndTextureMode();
 		DrawTextureRec(target.texture, (Rectangle){0, 0, (float)target.texture.width, (float)target.texture.height}, (Vector2){10, 10}, WHITE);
 	};
+
+	void Unload() override
+	{
+		exit(34);
+		UnloadRenderTexture(target);
+	}
 } sk;
 
 int main()
